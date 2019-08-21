@@ -1,0 +1,139 @@
+/* 共通 */
+a {
+  text-decoration: none;
+  color: #676767;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  /* 2 */
+  width: 1040px;
+  padding-right: 10px;
+  /* 3 */
+  padding-left: 10px;
+  /* 3 */
+  overflow: hidden;
+}
+
+/* header */
+.global-nav {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.header-low1 {
+  display: flex;
+}
+
+.school-logo {
+  width: 211px;
+  height: 45px;
+}
+
+.header-nav-wrapper {
+  display: flex;
+}
+
+.header-nav {
+}
+
+.nav-color {
+  background-color: #181836;
+}
+
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-list a {
+  width: 14%;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.header-invitation::after {
+  content: url(../images/icon_arrow01_right_blue01.png);
+}
+
+.header-image {
+  background-image: url("../images/about_mainimage01.jpg");
+  width: 100%;
+  min-height: 470px;
+  padding: 50px 10px 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-school {
+  text-align: center;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  padding: 20px 10px 18px;
+  border-bottom: 1px solid;
+}
+
+/* body_main */
+.main-text {
+  margin-bottom: 70px;
+}
+
+.main-text-upper {
+  text-align: center;
+}
+
+.main-text-low {
+  width: 640px;
+  margin: 0 auto 60px;
+}
+
+.education-wrapper h2 {
+  margin-top: 0;
+}
+
+.education-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.education-text {
+  width: 53%;
+}
+
+.education-text li {
+  margin-bottom: 50px;
+  font-size: 19px;
+}
+
+.education-text span {
+  font-size: 24px;
+  padding: 5px 15px 5px 0;
+  margin: 0 15px 0 0;
+  border-right: solid 1px #1c1c1c;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.education-image {
+  width: 47%;
+}
