@@ -1,7 +1,7 @@
 /* 共通 */
 a {
   text-decoration: none;
-  color: #676767;
+  color: #333333;
 }
 
 *,
@@ -12,6 +12,10 @@ a {
 
 * {
   text-decoration: none;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 ul {
@@ -49,9 +53,6 @@ ul {
 
 .header-nav-wrapper {
   display: flex;
-}
-
-.header-nav {
 }
 
 .nav-color {
@@ -94,7 +95,7 @@ ul {
 
 /* body_main */
 .main-text {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 .main-text-upper {
@@ -106,8 +107,14 @@ ul {
   margin: 0 auto 60px;
 }
 
-.education-wrapper h2 {
-  margin-top: 0;
+.heading {
+  margin: 0 0 30px;
+    padding: 0 0 10px;
+    border-bottom: 2px bold;
+}
+
+.heading::after {
+ content: url(../images/line02_black01.png);
 }
 
 .education-block {
@@ -136,4 +143,145 @@ ul {
 
 .education-image {
   width: 47%;
+}
+
+.flex-container {
+  text-align: center:
+}
+.standard-block {
+  display: flex;
+  justify-content: center;
+  width: 680px;
+  margin: 80px auto;
+  border: 1px solid;
+  padding: 30px 40px;
+  background-color: #F7F7F7;
+  color: #333333;
+}
+
+.image-card {
+  padding-right: 20px;
+}
+
+.standard-block h3 {
+  margin-top: 0;
+}
+
+.standard-block  p {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.read-more {
+  width: 70px;
+  height: 13px;
+}
+
+.summary-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.summary-text {
+  width: 46%;
+}
+
+.summary-image {
+  width: 50%;
+}
+
+.summary {
+      margin: 0 0 10px;
+    padding: 0 0 25px;
+    border-bottom: solid 1px #1c1c1c;
+}
+
+.explanation {
+  font-size: 12px;
+}
+
+/* 高卒資格取得のためのBasic Program */
+.colored-block-wrapper {
+  background-color: #F7F7F7;
+  padding: 70px 10px 1px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.main-heading {
+  margin: 0 0 20px;
+    padding: 0 0 10px;
+    font-size: 33px;
+    font-weight: normal;
+}
+
+.main-heading::after {
+  content: url(../images/line01_black01.png) ;
+}
+
+.subject {
+  text-align: center;
+}
+
+.subject p {
+  margin-bottom: 60px;
+}
+
+.contents-wrapper {
+  display: flex;
+  margin-bottom: 110px;
+  justify-content: space-between;
+}
+
+.contents-wrapper-reverse {
+  display: flex;
+  margin-bottom: 110px;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.contents-image {
+  width: 70%;
+}
+
+.contents-text {
+  width: 27%;
+}
+
+.contents-text  h3 {
+  font-weight: normal;
+}
+
+.tag {
+  display: inline-block;
+    padding: 2px 10px;
+    background: #1c1c1c;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.tag img {
+  height: 14px;
+}
+
+.contents-text h3 {
+  line-height: 2.5rem;
+  font-size: 22px;
+}
+
+.contents-text-low {
+  font-size: 11px;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  margin-top: 20px;
+}
+/* advanced program */
+
+.nocolored-block-wrapper {
+  padding: 70px 10px 1px;
+  border-bottom: 1px solid;
 }
