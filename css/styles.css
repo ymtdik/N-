@@ -210,11 +210,21 @@ ul {
   border-top: 1px solid;
 }
 
-.main-heading {
-  margin: 0 0 20px;
+.main-heading-upper {
+   margin: 0 0 20px;
     padding: 0 0 10px;
     font-size: 33px;
     font-weight: normal;
+}
+.main-heading {
+  margin: 0 0 80px;
+    padding: 0 0 10px;
+    font-size: 33px;
+    font-weight: normal;
+}
+
+.main-heading-upper::after {
+  content: url(../images/line01_black01.png) ;
 }
 
 .main-heading::after {
@@ -274,6 +284,10 @@ ul {
 .contents-text-low {
   font-size: 11px;
   margin-bottom: 20px;
+}
+
+.sub-heading {
+  margin-top: 0;
 }
 
 .read-more {
