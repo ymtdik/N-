@@ -299,3 +299,167 @@ ul {
   padding: 70px 10px 1px;
   border-bottom: 1px solid;
 }
+
+/* N高生からのメッセージ */
+.message-wrapper {
+  margin-bottom: 40px;
+}
+.upper-contents {
+  display:flex;
+  justify-content: space-between;
+}
+.upper-contents .border-box {
+  height: 140px;
+}
+
+.lower-contents {
+  display:flex;
+  justify-content: space-between;
+}
+
+.lower-contents .border-box {
+  height:120px;
+}
+
+.border-box {
+  width: 47%;
+  background-image: url("../images/bg_diagonal01_black01.png");
+  margin-bottom: 30px;
+}
+
+.upper-contents .message-contents {
+  background-color: white;
+  margin: 0 7px;
+  position: relative;
+    top: -25px;
+    height: 125px;
+}
+
+.lower-contents .message-contents {
+  background-color: white;
+  margin: 0 7px;
+  position: relative;
+    top: -25px;
+    height: 105px;
+}
+
+.message-contents h4{
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom:0;
+  padding-left:20px;
+}
+
+.one-line-message {
+  padding-top: 30px;
+}
+
+.two-line-message {
+  padding-top: 20px;
+}
+
+.message-contents p {
+  font-size: 13px;
+  padding-left:20px;
+  margin-top: 5px
+}
+
+/* youtube */
+.youtube-wrapper {
+  margin-bottom: 200px;
+}
+.youtube-wrapper p {
+  margin: 0;
+  padding-left: 50px;
+}
+
+/* fooer */
+.footer-background {
+  background-image: url("../images/footer02_bg01.png");
+  height: 247px;
+  text-align: center;
+  color: #ffffff; 
+}
+
+.request-wrapper {
+  display: flex;
+  justify-content : center;
+}
+
+h5 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.inquiry {
+  color: #ffffff;
+  border: 1px solid;
+  padding: 10px 20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.inquiry::after {
+  content:  url(../images/icon_arrow01_right_white01.png);
+  margin-left: 20px;
+}
+
+.request-image {
+  margin: 0;
+  padding-right: 50px;
+}
+.request-image li {
+  margin-bottom: 14px;
+}
+
+.request-image li a{
+  background: #ffffff;
+  padding: 14px 24px 9px 18px;
+  display: block;
+}
+
+.request-image li a::after {
+  content: url(../images/icon_arrow01_right_black01.png);
+  margin-left: 20px;
+}
+
+.information-icon {
+  vertical-align:middle;
+  margin-right: 16px;
+ display: inline-block;
+    width: 29px;
+    height: 27px;
+}
+.telephone-number {
+  width: 250px;
+  height: 30px;
+  object-fit: contain;
+  margin-top:10px;
+}
+
+.request p {
+  margin-bottom: 6px;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.other-information {
+  text-align: center;
+}
+
+.other-information p {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.information-contents {
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+}
+
+.information-contents .message-contents {
+  position: relative;
+    top: -25px;
+    height: 105px;
+}
