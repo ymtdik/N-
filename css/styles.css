@@ -36,6 +36,11 @@ ul {
 }
 
 /* header */
+.header-navigation {
+  position: relative;
+z-index: 2;
+background: rgba(255, 255, 255, 1.0);
+}
 .global-nav-color {
   background-color: #f7f7f7;
 }
@@ -58,6 +63,10 @@ ul {
 
 .global-nav a {
   padding: 0 15px;
+}
+
+.global-nav li a:hover {
+  text-decoration: underline;
 }
 
 .global-nav-choices {
@@ -121,6 +130,10 @@ content: '';
   padding-left: 30px;
 }
 
+.sns-images a:hover {
+  opacity: 0.7;
+}
+
 .header-nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -152,10 +165,18 @@ content: '';
   letter-spacing: 3px;
 }
 
+.header-nav-upper:hover {
+  color: #1f286f;
+}
+
 .header-nav span {
   display: block;
   font-size:11px;
   color: #8d959c;
+}
+
+.header-nav span:hover {
+  color: #1f286f;
 }
 
 .affiliated-schools {
@@ -175,6 +196,11 @@ content: '';
 .header-invitation {
   border: 1px solid;
   padding: 12px 10px;
+}
+
+.header-invitation:hover {
+  background-color: #1f286f;
+  color: #ffffff;
 }
 
 .header-invitation-upper {
@@ -197,6 +223,11 @@ content: '';
   margin-left: 15px;
 }
 
+.header-invitation:hover:after {
+  content: "";
+  background-image: url(../images/icon_arrow01_right_white01.png);
+}
+
 .document-request:after {
   content: '';
   display: inline-block;/*忘れずに！*/
@@ -207,6 +238,115 @@ content: '';
   background-size: contain;
   position: relative;
   left: 20px;
+}
+
+.document-request:hover:after {
+  content: "";
+  background-image: url(../images/icon_arrow01_right_white01.png);
+}
+/* 固定ヘッダー */
+.header-fixed {
+  position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.90);
+}
+.header-fixed-list {
+  display: flex;
+align-items : center;
+}
+
+.header-fixed-list >:first-child {
+  margin-right: auto;
+}
+
+.nkou-image {
+  width: 170px;
+  height: 36px;
+}
+
+.telephne-number-fixed {
+  width: 190px;
+  height: 25px;
+  padding-right:  10px;
+  object-fit: contain;
+}
+
+.reception-time {
+  font-size: 11px;
+  color: #8d959c;
+}
+
+.information-session {
+  border: 1px solid #1f286f;
+  padding: 12px 10px 12px 20px;
+  font-size: 15px;
+  color: #1f286f;
+}
+
+.information-session:after {
+  content: "";
+  display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+    background-size: contain;
+    vertical-align: middle;
+  background-image: url(../images/icon_arrow01_right_blue02.png);
+  background-repeat: no-repeat;
+}
+
+.information-session:hover:after {
+  content: "";
+  background-image: url(../images/icon_arrow01_right_white01.png);
+}
+
+.information-session:hover {
+  background-color: #1f286f;
+  color: #ffffff;
+}
+
+.information-session-list {
+  padding-left: 10px;
+}
+
+.document-request-fiexd {
+  border: 1px solid #1f286f;
+  padding: 12px 30px 10px 50px;
+  font-size: 15px;
+  color: #1f286f
+}
+
+.document-request-fiexd:after {
+    content: "";
+  display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+    background-size: contain;
+    vertical-align: middle;
+  background-image: url(../images/icon_arrow01_right_blue02.png);
+  background-repeat: no-repeat;
+  position: relative;
+  left: 18px;
+}
+
+.document-request-fiexd:hover:after {
+   content: "";
+  background-image: url(../images/icon_arrow01_right_white01.png);
+}
+
+.document-request-fiexd:hover {
+  background-color: #1f286f;
+  color: #ffffff;
+}
+
+.document-request-fiexd-list {
+  padding-left: 23px;
 }
 
 .nav-color {
@@ -222,6 +362,7 @@ content: '';
     border-right: 6px solid transparent;
     border-bottom: 10px solid #181836;
     border-left: 6px solid transparent;
+    z-index:2;
 }
 
 .header-list {
@@ -246,6 +387,11 @@ content: '';
    padding: 7px;
   color: #ffffff;
   font-size: 14px;
+}
+
+.header-list a:hover {
+  background-color: #ffffff;
+  color: #181836;
 }
 
 .header-image {
@@ -279,6 +425,10 @@ h1 {
 .breadcrumbs a {
   color: #36538d;
   font-size: 14px;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 
 .breadcrumbs span {
@@ -326,7 +476,7 @@ h1 {
 .heading {
   margin: 0 0 30px;
     padding: 0 0 10px;
-    border-bottom: 2px bold;
+    border-bottom: 2px;
 }
 
 .attraction {
@@ -366,7 +516,7 @@ h1 {
 }
 
 .flex-container {
-  text-align: center:
+  text-align: center;
 }
 .standard-block {
   display: flex;
@@ -383,6 +533,10 @@ h1 {
   padding-right: 20px;
 }
 
+.image-card:hover  {
+  opacity: 0.7;
+}
+
 .standard-block h3 {
   margin-top: 0;
 }
@@ -396,6 +550,10 @@ h1 {
 .read-more {
   width: 70px;
   height: 13px;
+}
+
+.read-more:hover {
+  opacity: 0.7;
 }
 
 .summary-wrapper {
@@ -475,6 +633,10 @@ h1 {
 
 .contents-text {
   width: 27%;
+}
+
+.contents-text:hover {
+  opacity: 0.7;
 }
 
 .contents-text  h3 {
@@ -637,6 +799,10 @@ h1 {
   margin-top: 5px
 }
 
+.message-contents:hover {
+  opacity: 0.8;
+}
+
 /* youtube */
 .youtube-wrapper {
   margin-bottom: 200px;
@@ -655,6 +821,10 @@ h1 {
   color: #ffffff; 
 }
 
+.footer-background a:hover {
+  opacity: 0.7;
+}
+
 .request-wrapper {
   display: flex;
   justify-content : center;
@@ -671,6 +841,11 @@ h5 {
   padding: 10px 20px;
   margin-left: 20px;
   display: inline-block;
+}
+
+.inquiry:hover {
+  text-decoration: underline;
+  opacity: 1.0  !important;
 }
 
 .inquiry::after {
@@ -754,10 +929,14 @@ h5 {
     top: 5px;
 }
 
+.white-box:hover {
+  opacity: 0.8;
+}
+
 .information-contents {
   display:flex;
   justify-content: space-between;
-  padding-bottom: 4f0px;
+  padding-bottom: 40px;
 }
 
 .information-contents .message-contents {
@@ -808,6 +987,10 @@ h5 {
   color:#000066;
 }
 
+.footer-menu li a:hover {
+  text-decoration: underline;
+}
+
 .footer-menu-top {
   padding-left: 0 !important;
 }
@@ -820,12 +1003,20 @@ h5 {
   border: none !important;
 }
 
+.page-top-button:hover {
+  opacity: 0.7;
+}
+
 .footer-list {
   display: flex;
   border-bottom: 1px solid #C9C9C9;
   padding-bottom: 30px;
   justify-content : space-between;
   margin-bottom: 30px;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
 }
 
 .footer-list-wrapper {
@@ -886,6 +1077,10 @@ h5 {
   font-size: 14px;
 }
 
+.footer-bottom-list li a:hover {
+  text-decoration: underline;
+}
+
 .footer-bottom-list li a img {
   width: 32px;
   padding-right: 5px;
@@ -894,6 +1089,10 @@ h5 {
 .sns-icon {
   padding:5px;
   border-right : 1px solid #C9C9C9;
+}
+
+.sns-icon:hover {
+ background: rgba(0, 0, 0, 0.05);
 }
 
 .youtube-icon {
@@ -925,6 +1124,10 @@ h5 {
 }
 
 .copy-right li a {
-  color: #ffffff;
+  color: #999999;
   font-size: 11px;
+}
+
+.copy-right li a:hover {
+  text-decoration: underline;
 }
