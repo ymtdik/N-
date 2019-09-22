@@ -142,15 +142,18 @@ content: '';
   padding-bottom: 20px;
 }
 
+.header-nav-wrapper >:nth-child(4) {
+  margin-right: auto;
+}
+
 .header-nav {
   text-align: center;
   border-right: 1px solid #8d959c;
-  padding-right: 40px;
+  padding: 0 25px;
 }
 
 .about-Nkou {
   border-left: 1px solid  #8d959c !important;
-  padding-left: 20px;
 }
 
 .about-Nkou span{
@@ -179,10 +182,6 @@ content: '';
   color: #1f286f;
 }
 
-.affiliated-schools {
-  padding-right: 20px !important;
-}
-
 .header-invitation-box {
   padding: 0;
   border: none;
@@ -204,12 +203,18 @@ content: '';
 }
 
 .header-invitation-upper {
-  padding-left: 20px;
+  padding-left: 30px;
+  display: block;
+}
+
+.document-request-box {
+  padding-left: 10px !important;
 }
 
 .document-request {
   padding-left: 50px;
   padding-right: 30px;
+  display: block;
 }
 
 .header-invitation::after {
@@ -281,7 +286,7 @@ align-items : center;
 
 .information-session {
   border: 1px solid #1f286f;
-  padding: 12px 10px 12px 20px;
+  padding: 12px 10px 10px 30px;
   font-size: 15px;
   color: #1f286f;
 }
@@ -346,7 +351,7 @@ align-items : center;
 }
 
 .document-request-fiexd-list {
-  padding-left: 23px;
+  padding-left: 10px;
 }
 
 .nav-color {
